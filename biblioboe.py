@@ -6,7 +6,7 @@ from multiprocessing.pool import ThreadPool
 from tqdm import tqdm
 
 
-print ("Do you wish to download the files in Epub format? y/n [Default=Pdf]")
+print ("¿Quieres descargar los archivos en Epub? y/n [Default=Pdf]")
 formatpref= input ()
 if (formatpref == "y"):
     epub="epub"
@@ -18,8 +18,9 @@ else:
 
 print ("""
 
-Which Categories do you want to download [ENTER=All]""")
+Elige que categoría quieres descargar [0=All]""")
 print ("""
+0. Todas
 1. Derecho Constitucional
 2. Derecho Administrativo General
 3. Función Pública
@@ -235,9 +236,10 @@ urls9 = [
 
 
 
-
-
 ]
+
+urls0 =(urls1 + urls2 + urls2 +  urls3 +  urls4 +  urls5 +  urls6 +  urls7 +  urls8 +  urls9)
+
 
 if (categories == "1"):
     urls = urls1
@@ -257,6 +259,8 @@ elif (categories == "8"):
     urls = urls8
 elif (categories == "9"):
     urls = urls9
+elif (categories == "0"):
+    urls = urls0
 else:
     print("Please select a number between 1 and 9")
     sys.exit()

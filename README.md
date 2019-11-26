@@ -1,6 +1,6 @@
 # Biblioteca-BOE
 
-Descarga automática de la biblioteca del BOE con Python en PDF/EPub.  
+Python script de descarga automática de la biblioteca del BOE en PDF/EPub.  
 
 
 
